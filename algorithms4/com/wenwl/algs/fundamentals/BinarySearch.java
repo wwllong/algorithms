@@ -15,9 +15,18 @@ import java.util.Arrays;
  */
 public class BinarySearch {
 
+    /**
+     * 不应实例化此类
+     */
+    private BinarySearch() { }
 
-    public static int rank(int key, int[] a) {
-        // 数组必须是有序的
+    /**
+     * 返回指定键在指定数组中的索引。
+     * @param a 一个整形数组，并且必须按照升序排序
+     * @param key 搜寻的键
+     * @return 数组中键的索引（如果存在）；否则返回-1
+     */
+    public static int indexOf(int[] a, int key){
         int lo = 0;
         int hi = a.length - 1;
         while (lo <= hi) {
@@ -35,12 +44,15 @@ public class BinarySearch {
     }
 
     public static void main(String[] args) {
-        int[] whileList = In.readInts(args[0]);
-        Arrays.sort(whileList);
+        // 从文件中读取整数
+        In in = new In(args[0]);
+        int[] whiteList = in.readAllInts();
+        // 数组排序
+        Arrays.sort(whiteList);
+        // 读取键值，如果不存在于白名单中将其打印
         while(!StdIn.isEmpty()){
-            // 读取键值，如果不存在于白名单中将其打印
             int key = StdIn.readInt();
-            if(rank(key, whileList) < 0){
+            if(indexOf(whiteList, key) == -1){
                 StdOut.println(key);
             }
         }
