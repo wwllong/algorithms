@@ -1,4 +1,4 @@
-package com.wenwl.algs.fundamentals;
+package com.wenwl.algs.ch1_fundamentals.sec1_basic_prog_model;
 
 import edu.princeton.cs.algs4.In;
 import edu.princeton.cs.algs4.StdIn;
@@ -12,6 +12,7 @@ import java.util.Arrays;
  * @dsecription 二分查找
  * @data 2020/4/12 18:00
  * @vserion 1.0.0
+ * @src_code https://algs4.cs.princeton.edu/code/edu/princeton/cs/algs4/BinarySearch.java.html
  */
 public class BinarySearch {
 
