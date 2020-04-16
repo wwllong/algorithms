@@ -31,7 +31,6 @@ public class Ex07 {
         for (int i = 1; i < 1000; i++) {
             for (int j = 0; j < i; j++) {
                 sum++;
-                StdOut.println(sum);
             }
         }
         StdOut.println(sum);
