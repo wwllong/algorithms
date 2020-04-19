@@ -29,7 +29,7 @@ public class Ex22 {
         }
     }
 
-    private static int indexOf(int[] a, int key) {
+    public static int indexOf(int[] a, int key) {
         return indexOf(a, key, 0, a.length - 1, 0);
     }
 
