@@ -3,6 +3,8 @@ package com.wenwl.algs.ch1_fundamentals.sec1_basic_prog_model;
 import edu.princeton.cs.algs4.StdDraw;
 import edu.princeton.cs.algs4.StdRandom;
 
+import java.awt.*;
+
 /**
  * @author wenwl
  * @className Ex31
@@ -30,15 +32,15 @@ public class Ex31 {
         StdDraw.circle(0, 0, 0.5);
         StdDraw.setPenRadius(.15);
 
-
         double[][] d = new double[n][2];
         double angle = 360.0 / n;
+        StdDraw.setPenRadius(.025);
         for (int i = 0; i < n; i++) {
             d[i][0] = 0.5 * Math.cos(angle * i * Math.PI / 180);
             d[i][1] = 0.5 * Math.sin(angle * i * Math.PI / 180);
             StdDraw.point(d[i][0], d[i][1]);
         }
-
+        StdDraw.setPenColor(Color.GRAY);
         StdDraw.setPenRadius();
 
         for (int i = 0; i < n - 1; i++) {
