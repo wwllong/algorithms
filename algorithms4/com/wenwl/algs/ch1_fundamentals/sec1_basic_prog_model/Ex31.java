@@ -36,8 +36,10 @@ public class Ex31 {
         double angle = 360.0 / n;
         StdDraw.setPenRadius(.025);
         for (int i = 0; i < n; i++) {
-            d[i][0] = 0.5 * Math.cos(angle * i * Math.PI / 180);
-            d[i][1] = 0.5 * Math.sin(angle * i * Math.PI / 180);
+            //  Math.sin(double a) 对于参数a的说明：a  an angle, in radians(一个角度，以弧度表示)。
+            //  Math.toRadians(double angdeg) : angle * Math.PI / 180
+            d[i][0] = 0.5 * Math.cos(Math.toRadians(angle * i));
+            d[i][1] = 0.5 * Math.sin(Math.toRadians(angle * i));
             StdDraw.point(d[i][0], d[i][1]);
         }
         StdDraw.setPenColor(Color.GRAY);
