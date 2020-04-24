@@ -13,13 +13,6 @@ import java.awt.*;
  */
 public class Ex31 {
 
-    public static void main(String[] args) {
-        int n = Integer.parseInt(args[0]);
-        double p = Double.parseDouble(args[1]);
-        p = Math.max(0,Math.min(1,p));
-        drawRandConn(n,p);
-    }
-
     /**
      * 随机连接
      * @param n N个点
@@ -54,4 +47,12 @@ public class Ex31 {
         }
 
     }
+
+    public static void main(String[] args) {
+        int n = Integer.parseInt(args[0]);
+        double p = Double.parseDouble(args[1]);
+        p = Math.max(0,Math.min(1,p));
+        drawRandConn(n,p);
+    }
+
 }

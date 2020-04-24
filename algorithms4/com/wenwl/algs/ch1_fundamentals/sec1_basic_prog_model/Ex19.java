@@ -10,13 +10,6 @@ import edu.princeton.cs.algs4.StdOut;
  */
 public class Ex19 {
 
-    public static void main(String[] args) {
-        for (int i = 0; i <= 100; i++) {
-//            StdOut.printf("%d %d\n",i,f(i));
-            StdOut.printf("%d %d\n",i,fib(i));
-        }
-    }
-
     /**
      * 40 102334155
      * 45 1134903170
@@ -71,5 +64,10 @@ public class Ex19 {
         return arr;
     }
 
-
+    public static void main(String[] args) {
+        for (int i = 0; i <= 100; i++) {
+//            StdOut.printf("%d %d\n",i,f(i));
+            StdOut.printf("%d %d\n",i,fib(i));
+        }
+    }
 }

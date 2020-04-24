@@ -12,16 +12,6 @@ import java.util.Arrays;
  */
 public class Ex15 {
 
-    public static void main(String[] args) {
-
-        int[] arr = {2,2,3,4,5,9,9};
-        int[] resultArr = histogram(arr, 10);
-
-        for (int i = 0; i < resultArr.length; i++) {
-            StdOut.printf("%3d", resultArr[i]);
-        }
-    }
-
     private static int[] histogram(int[] a, int m) {
         int[] resultArr = new int[m];
         for (int i = 0; i < a.length; i++) {
@@ -32,5 +22,13 @@ public class Ex15 {
         return resultArr;
     }
 
+    public static void main(String[] args) {
 
+        int[] arr = {2,2,3,4,5,9,9};
+        int[] resultArr = histogram(arr, 10);
+
+        for (int i = 0; i < resultArr.length; i++) {
+            StdOut.printf("%3d", resultArr[i]);
+        }
+    }
 }

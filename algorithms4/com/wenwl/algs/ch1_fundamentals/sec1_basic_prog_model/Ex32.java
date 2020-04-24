@@ -13,16 +13,6 @@ import edu.princeton.cs.algs4.StdStats;
  */
 public class Ex32 {
 
-    public static void main(String[] args) {
-        int n = Integer.parseInt(args[0]);
-        double l = Double.parseDouble(args[1]),
-                r = Double.parseDouble(args[2]);
-
-        double[] values = StdIn.readAllDoubles();
-
-        histogram(values, n, l, r);
-    }
-
     /**
      * 柱形图
      * @param values 值
@@ -76,5 +66,16 @@ public class Ex32 {
             return (int)(n * (v - l) / (r - l));
         }
     }
+
+    public static void main(String[] args) {
+        int n = Integer.parseInt(args[0]);
+        double l = Double.parseDouble(args[1]),
+                r = Double.parseDouble(args[2]);
+
+        double[] values = StdIn.readAllDoubles();
+
+        histogram(values, n, l, r);
+    }
+
 
 }

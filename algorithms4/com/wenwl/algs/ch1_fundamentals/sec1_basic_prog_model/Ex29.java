@@ -14,24 +14,6 @@ import java.util.Arrays;
  */
 public class Ex29 {
 
-    public static void main(String[] args) {
-        // 从文件中读取整数
-        In in = new In(args[0]);
-        int[] whiteList = in.readAllInts();
-        // 数组排序
-        Arrays.sort(whiteList);
-        for (int i = 0; i < whiteList.length; i++) {
-            StdOut.printf("%s \n", whiteList[i]);;
-        }
-
-        while(!StdIn.isEmpty()){
-            int key = StdIn.readInt();
-            if(indexOf(whiteList, key) != -1){
-                StdOut.printf("key：%s less：%s count：%s \n",key,indexOf(whiteList, key), count(whiteList, key));
-            }
-        }
-    }
-
     private static int indexOf(int[] a, int key){
         int lo = 0;
         int hi = a.length - 1;
@@ -57,5 +39,23 @@ public class Ex29 {
             count++;
         }
         return count;
+    }
+
+    public static void main(String[] args) {
+        // 从文件中读取整数
+        In in = new In(args[0]);
+        int[] whiteList = in.readAllInts();
+        // 数组排序
+        Arrays.sort(whiteList);
+        for (int i = 0; i < whiteList.length; i++) {
+            StdOut.printf("%s \n", whiteList[i]);;
+        }
+
+        while(!StdIn.isEmpty()){
+            int key = StdIn.readInt();
+            if(indexOf(whiteList, key) != -1){
+                StdOut.printf("key：%s less：%s count：%s \n",key,indexOf(whiteList, key), count(whiteList, key));
+            }
+        }
     }
 }

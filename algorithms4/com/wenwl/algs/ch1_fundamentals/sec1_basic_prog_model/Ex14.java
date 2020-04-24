@@ -10,11 +10,6 @@ import edu.princeton.cs.algs4.StdOut;
  */
 public class Ex14 {
 
-    public static void main(String[] args) {
-        StdOut.println(lg(1025));
-        StdOut.println(lg2(1025));
-    }
-
     /**
      * 返回不大于logN的最大整数
      * @param n
@@ -37,5 +32,9 @@ public class Ex14 {
         return i - 1;
     }
 
+    public static void main(String[] args) {
+        StdOut.println(lg(1025));
+        StdOut.println(lg2(1025));
+    }
 
 }

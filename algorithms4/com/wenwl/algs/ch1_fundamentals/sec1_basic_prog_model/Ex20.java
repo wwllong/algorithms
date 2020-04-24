@@ -10,10 +10,6 @@ import edu.princeton.cs.algs4.StdOut;
  */
 public class Ex20 {
 
-    public static void main(String[] args) {
-        StdOut.println(ln(10));
-    }
-
     /**
      * ln(N!)
      * 阶乘的递归定义 0!=1，n!=(n-1)!×n。
@@ -26,6 +22,10 @@ public class Ex20 {
         }else {
             return Math.log(n) + ln(n-1);
         }
+    }
+
+    public static void main(String[] args) {
+        StdOut.println(ln(10));
     }
 
 

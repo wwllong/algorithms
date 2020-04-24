@@ -10,16 +10,6 @@ import edu.princeton.cs.algs4.StdOut;
  */
 public class Ex13 {
 
-    public static void main(String[] args) {
-
-        int[][] arr = {
-                {0,1,0},
-                {1,0,1}
-        };
-
-        printTransposeMatrix(arr);
-    }
-
     /**
      * 打印数组的转置
      * @param arr 二维整型数组
@@ -35,5 +25,14 @@ public class Ex13 {
         
     }
 
+    public static void main(String[] args) {
+
+        int[][] arr = {
+                {0,1,0},
+                {1,0,1}
+        };
+
+        printTransposeMatrix(arr);
+    }
 
 }

@@ -14,21 +14,6 @@ import java.util.Arrays;
  */
 public class Ex22 {
 
-    public static void main(String[] args) {
-        // 从文件中读取整数
-        In in = new In(args[0]);
-        int[] whiteList = in.readAllInts();
-        // 数组排序
-        Arrays.sort(whiteList);
-        // 读取键值，如果不存在于白名单中将其打印
-        while (!StdIn.isEmpty()) {
-            int key = StdIn.readInt();
-            if (indexOf(whiteList, key) == -1) {
-                StdOut.println(key);
-            }
-        }
-    }
-
     public static int indexOf(int[] a, int key) {
         return indexOf(a, key, 0, a.length - 1, 0);
     }
@@ -59,5 +44,19 @@ public class Ex22 {
         return s;
     }
 
+    public static void main(String[] args) {
+        // 从文件中读取整数
+        In in = new In(args[0]);
+        int[] whiteList = in.readAllInts();
+        // 数组排序
+        Arrays.sort(whiteList);
+        // 读取键值，如果不存在于白名单中将其打印
+        while (!StdIn.isEmpty()) {
+            int key = StdIn.readInt();
+            if (indexOf(whiteList, key) == -1) {
+                StdOut.println(key);
+            }
+        }
+    }
 
 }

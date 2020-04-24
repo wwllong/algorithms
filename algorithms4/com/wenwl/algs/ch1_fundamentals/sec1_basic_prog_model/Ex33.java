@@ -12,18 +12,6 @@ import java.util.Arrays;
  */
 public class Ex33 {
 
-    public static void main(String[] args) {
-        testDot();
-        StdOut.println();
-        testMultAB();
-        StdOut.println();
-        testTranspose();
-        StdOut.println();
-        testMultAX();
-        StdOut.println();
-        testMultYA();
-    }
-
     public static void testDot(){
         double[] x = {5.0, 1.0};
         double[] y = {1.0, 5.0};
@@ -85,7 +73,16 @@ public class Ex33 {
         StdOut.println(Arrays.toString(mult));
     }
 
-
-
+    public static void main(String[] args) {
+        testDot();
+        StdOut.println();
+        testMultAB();
+        StdOut.println();
+        testTranspose();
+        StdOut.println();
+        testMultAX();
+        StdOut.println();
+        testMultYA();
+    }
 
 }

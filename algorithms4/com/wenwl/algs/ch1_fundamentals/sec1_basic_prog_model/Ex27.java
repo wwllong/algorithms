@@ -13,25 +13,6 @@ public class Ex27 {
     private static long COUNT = 0;
     private static long BETTER_COUNT = 0;
 
-    public static void main(String[] args) {
-        /** 在N很大的时候递归层数很深
-         * result：0.058399200439453125 count：2467
-         * result：0.009922275279677706 count：2435538
-         * result：0.0019305450194630897 count：2440764535
-         */
-        StdOut.printf("result：%s count：%s\n", binomial(10, 5, 0.25), COUNT);
-        COUNT = 0;
-        StdOut.printf("result：%s count：%s\n", binomial(20, 10, 0.25), COUNT);
-        COUNT = 0;
-        StdOut.printf("result：%s count：%s\n", binomial(30, 15, 0.25), COUNT);
-
-        StdOut.printf("result：%s betterCount：%s\n", betterBinomial(10, 5, 0.25), BETTER_COUNT);
-        BETTER_COUNT = 0;
-        StdOut.printf("result：%s betterCount：%s\n", betterBinomial(20, 10, 0.25), BETTER_COUNT);
-        BETTER_COUNT = 0;
-        StdOut.printf("result：%s betterCount：%s\n", betterBinomial(30, 15, 0.25), BETTER_COUNT);
-    }
-
     /**
      * 二项分布
      * @param n 实验次数
@@ -76,5 +57,22 @@ public class Ex27 {
         return matrix[n][k];
     }
 
+    public static void main(String[] args) {
+        /** 在N很大的时候递归层数很深
+         * result：0.058399200439453125 count：2467
+         * result：0.009922275279677706 count：2435538
+         * result：0.0019305450194630897 count：2440764535
+         */
+        StdOut.printf("result：%s count：%s\n", binomial(10, 5, 0.25), COUNT);
+        COUNT = 0;
+        StdOut.printf("result：%s count：%s\n", binomial(20, 10, 0.25), COUNT);
+        COUNT = 0;
+        StdOut.printf("result：%s count：%s\n", binomial(30, 15, 0.25), COUNT);
 
+        StdOut.printf("result：%s betterCount：%s\n", betterBinomial(10, 5, 0.25), BETTER_COUNT);
+        BETTER_COUNT = 0;
+        StdOut.printf("result：%s betterCount：%s\n", betterBinomial(20, 10, 0.25), BETTER_COUNT);
+        BETTER_COUNT = 0;
+        StdOut.printf("result：%s betterCount：%s\n", betterBinomial(30, 15, 0.25), BETTER_COUNT);
+    }
 }

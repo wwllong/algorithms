@@ -10,11 +10,6 @@ import edu.princeton.cs.algs4.StdOut;
  */
 public class Ex24 {
 
-    public static void main(String[] args) {
-        StdOut.printf("result：%s\n",euclid(1111111, 1234567));
-        StdOut.printf("result：%s\n",euclid(1997, 615));
-    }
-
     private static int euclid(int p, int q) {
         StdOut.printf("p=%s,q=%s\n", p, q);
         if (p == 0 || q == 0) {
@@ -30,6 +25,11 @@ public class Ex24 {
         } else {
             return euclid(q, p % q);
         }
+    }
+
+    public static void main(String[] args) {
+        StdOut.printf("result：%s\n",euclid(1111111, 1234567));
+        StdOut.printf("result：%s\n",euclid(1997, 615));
     }
 
 }

@@ -10,13 +10,6 @@ import edu.princeton.cs.algs4.StdOut;
  */
 public class Ex18 {
 
-    public static void main(String[] args) {
-        StdOut.println(mystery(2,25));
-        StdOut.println(mystery(3,11));
-        StdOut.println(mystery2(2,25));
-        StdOut.println(mystery2(3,11));
-    }
-
     /**
      * 返回 a * b
      */
@@ -43,6 +36,13 @@ public class Ex18 {
         }else{
             return mystery2(a * a, b / 2) * a;
         }
+    }
+
+    public static void main(String[] args) {
+        StdOut.println(mystery(2,25));
+        StdOut.println(mystery(3,11));
+        StdOut.println(mystery2(2,25));
+        StdOut.println(mystery2(3,11));
     }
 
 }

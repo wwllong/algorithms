@@ -10,19 +10,6 @@ import edu.princeton.cs.algs4.StdOut;
  */
 public class Ex11 {
 
-    public static void main(String[] args) {
-
-        boolean[][] arr = {
-                {true,false,true,false},
-                {false,true,false,true},
-                {true,false,true,false},
-                {false,true,false,true},
-        };
-
-        printBooleanMatrix(arr);
-
-    }
-
     /**
      * 打印二维数组内容（*为真，‘’为假）以及行列号
      * @param arr 布尔类型二维数组
@@ -41,6 +28,19 @@ public class Ex11 {
             }
             StdOut.println();
         }
+
+    }
+
+    public static void main(String[] args) {
+
+        boolean[][] arr = {
+                {true,false,true,false},
+                {false,true,false,true},
+                {true,false,true,false},
+                {false,true,false,true},
+        };
+
+        printBooleanMatrix(arr);
 
     }
 }
